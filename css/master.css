@@ -1,0 +1,124 @@
+body{
+   background-color: #f2ebe3ff;
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+   
+
+    max-width: 550px;
+    background-color: #ffffff;
+    margin: 120px auto;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    height: 400px;
+    /* object-fit: fill; */
+
+
+}
+img{
+    width: 250px;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+.product-details{
+    padding-right: 20px ;
+    padding: 0px 24px 20px 0px;
+    margin: 0 10px 0 -0px;
+
+}
+h5{
+    color: #6c7289ff;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+h1{
+    font-family:"Fraunces", serif;
+    font-weight: 700;
+    margin-top: -5px;
+}
+p{
+    color: #6c7289ff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.now-price{
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 30px;
+    color:#3c8067ff;
+   
+}
+.discount{
+    color: #6c7289ff;
+    text-decoration: line-through;
+    vertical-align: super;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 14px;
+}
+button{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #3c8067ff;
+    color:#ffffff;
+    border: none;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: #1b4133ff;
+    cursor: pointer;
+}
+.icon-cart{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    vertical-align: middle;
+    padding: 10px 0 10px 0;
+}
+.attribution{
+    text-align: center;
+    font-size: 15px;
+    color: #6c7289ff;
+    margin-top: 350px;
+    
+}
+
+@media (max-width: 480px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        max-width: 100%;
+        margin: 0;
+        height: 100%;
+        /* padding: 0; */
+    }
+    img {
+         width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+    .product-details{
+        margin: 0;
+        padding-left: 20px;
+    }
+    .attribution{
+        margin-top: 10px ;
+        padding: 10px;
+    }
+}
